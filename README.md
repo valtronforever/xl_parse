@@ -32,3 +32,8 @@ python parse.py input.xlsx
 ```
 Result json will be saved to `output.json` file.
 Run `python parse.py --help` for additional usage info.
+
+## Run from docker
+```
+sudo docker run -it --rm --name xl_parse -v "$PWD":/app ghcr.io/valtronforever/xl_parse:latest input.xlsx
+```
