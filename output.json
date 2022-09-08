@@ -12519,9 +12519,14 @@
     },
     {
       "provider": "YBKENO",
-      "type": NaN,
+      "type": "N/A",
       "wallet": " gf_ybkeno_wallet",
-      "games": []
+      "games": [
+        {
+          "game_name": "\u5927\u5385",
+          "game_code": "ybkeno_pc_lobby"
+        }
+      ]
     },
     {
       "provider": "YBKENO",
@@ -12736,9 +12741,50 @@
     },
     {
       "provider": "YBKENO",
-      "type": NaN,
+      "type": "N/A",
       "wallet": " gf_ybkeno_wallet",
-      "games": []
+      "games": [
+        {
+          "game_name": "\u5927\u5385(mobile)",
+          "game_code": "ybkeno_h5_lobby"
+        },
+        {
+          "game_name": "\u4e07\u80fd\u4e07\u5b57",
+          "game_code": "ybkeno_h5_84"
+        },
+        {
+          "game_name": "\u6781\u901f\u4e07\u5b57",
+          "game_code": "ybkeno_h5_85"
+        },
+        {
+          "game_name": "\u591a\u591a\u4e07\u5b57",
+          "game_code": "ybkeno_h5_100"
+        },
+        {
+          "game_name": "\u5927\u9a6c\u4e07\u5b57",
+          "game_code": "ybkeno_h5_101"
+        },
+        {
+          "game_name": "\u65b0\u52a0\u5761\u4e07\u5b57",
+          "game_code": "ybkeno_h5_102"
+        },
+        {
+          "game_name": "\u5e78\u8fd0\u4e07\u5b57",
+          "game_code": "ybkeno_h5_103"
+        },
+        {
+          "game_name": "QQ\u5206\u5206\u5f69",
+          "game_code": "ybkeno_h5_166"
+        },
+        {
+          "game_name": "\u591a\u5f69\u6cb3\u51855\u5206\u5f69",
+          "game_code": "ybkeno_h5_167"
+        },
+        {
+          "game_name": "\u6cb3\u51851\u5206\u5f69",
+          "game_code": "ybkeno_h5_168"
+        }
+      ]
     },
     {
       "provider": "YBKENO",

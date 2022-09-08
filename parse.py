@@ -61,7 +61,6 @@ def main(input: Path, output: Path):
 
     with open(input, 'rb') as input:
         xl = pd.ExcelFile(input)
-        
         for sheet in progress_bar(xl.sheet_names):
             progress_bar.write(sheet)
             meta_df = pd.read_excel(input, sheet, header=None, nrows=2)
@@ -82,11 +81,15 @@ def main(input: Path, output: Path):
             data_df = process_strings(data_df)
 
             for data_type in data_df['type'].unique():
+                if pd.isna(data_type):
+                    games = data_df[data_df['type'].isna()]
+                else:
+                    games = data_df[data_df['type'] == data_type]
                 result['data'].append({
                     'provider': meta_info['provider'],
-                    'type': data_type,
+                    'type': "N/A" if pd.isna(data_type) else data_type,
                     'wallet': meta_info['wallet'],
-                    'games': data_df[data_df['type'] == data_type][['game_name', 'game_code']].to_dict('records')
+                    'games': games[['game_name', 'game_code']].to_dict('records')
                 })
 
     with open(output, 'w') as output:
